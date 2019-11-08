@@ -1,0 +1,9 @@
+.UserInput {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  height: 50px;
+  background: #aaa;
+  grid-gap: 10px;
+  width: 50px;
+  margin: auto 10px;
+}
