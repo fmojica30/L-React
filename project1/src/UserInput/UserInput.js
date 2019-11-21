@@ -4,8 +4,10 @@ import './UserInput.css';
 const UserInput = (props) => {
   return (
     <div className="UserInput">
-      <input type="text" onChange={props.userChange} value={props.username}/>
-      <input type="text" onChange={props.passChange} value={props.pasword} />
+      <label for="username">Username: </label>
+      <input type="text" onChange={props.userChange} value={props.username} name="username"/>
+      <label for="password">Password: </label>
+      <input type="text" onChange={props.passChange} value={props.pasword} name="password"/>
     </div>
   )
 };

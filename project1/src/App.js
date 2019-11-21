@@ -22,16 +22,22 @@ class App extends Component {
   };
 
   render() {
+    const style = {
+      backgroundColor: 'blue',
+      margin: 'auto',
+      borderRadius: '10px'
+    };
+
     return (
       <div>
         <UserInput userChange={this.usernameChangeHandler.bind(this)} passChange={this.passwordChangeHandler.bind(this)} username={this.state.username} password={this.state.password}>
 
         </UserInput>
-        <UserOutput username={this.state.username} password={this.state.password}>
+        <UserOutput style={style} username={this.state.username} password={this.state.password}>
 
         </UserOutput>
       </div>
-    )
+    );
   }
 };
 

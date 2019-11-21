@@ -1,9 +1,17 @@
 .UserInput {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  height: 50px;
   background: #aaa;
   grid-gap: 10px;
-  width: 50px;
-  margin: auto 10px;
+  width: 300px;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 5%;
+  justify-items: center;
+  border-radius: 10px;
+}
+
+.UserInput input {
+  width: 100px;
 }
